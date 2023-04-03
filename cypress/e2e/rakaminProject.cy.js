@@ -8,6 +8,7 @@ context('RakaminProject', () => {
       cy.get('a[data-cy=rakamin-logo]').should('be.visible');
     })
 
+    //note: I already made this account manually on web stagin rakamin, so if the web staging is on data reset this scenario will fail
     it('login with existing account', () => {
       cy.get("img[src='/assets/hamburger.d750d25a.svg']").should('be.visible');
       cy.get("img[src='/assets/hamburger.d750d25a.svg']").click();
